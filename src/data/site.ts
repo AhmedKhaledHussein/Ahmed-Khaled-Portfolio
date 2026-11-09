@@ -8,7 +8,7 @@ export const profile = {
   email: "Ahmed.khaaledh@gmail.com",
   phone: "+20 104 326 3308",
   whatsapp: "+20 104 326 3308",
-  github: { handle: "okA7meed", url: "https://github.com/okA7meed" },
+  github: { handle: "okA7meed", url: "https://github.com/AhmedKhaledHussein" },
   linkedin: {
     handle: "in/ahmed-khaled-h",
     url: "https://www.linkedin.com/in/ahmed-khaled-h-197649349",

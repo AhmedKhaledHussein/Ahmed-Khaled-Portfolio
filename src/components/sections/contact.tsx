@@ -42,7 +42,7 @@ export function Contact() {
     {
       label: t.contact.channels.linkedin,
       value: profile.linkedin.handle,
-      href: profile.linkedin.url,
+      href: profile.linkedin.url, 
       Icon: Linkedin,
     },
     {

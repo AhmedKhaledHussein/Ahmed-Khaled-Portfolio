@@ -50,7 +50,7 @@ export const Route = createFileRoute("/")({
           description,
           sameAs: [
             profile.github.url,
-            profile.linkedin.url,
+            profile.linkedin.url, 
             profile.instagram.url,
             profile.facebook.url,
           ],
