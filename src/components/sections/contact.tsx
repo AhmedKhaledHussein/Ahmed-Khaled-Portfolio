@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import { Reveal, Section, SectionHeading } from "@/components/sections/section-ui";
 import { profile } from "@/data/site";
-import { buildWhatsAppMessage, buildWhatsAppUrl } from "@/lib/whatsapp";
+import { WHATSAPP_NUMBER, buildWhatsAppMessage, buildWhatsAppUrl } from "@/lib/whatsapp";
 import { useLanguage } from "@/i18n/language";
 
 type FormState = { name: string; email: string; message: string };
@@ -30,7 +30,7 @@ export function Contact() {
     {
       label: t.contact.channels.phone,
       value: profile.phone,
-      href: `https://wa.me/2${profile.whatsapp}`,
+      href: `https://wa.me/${WHATSAPP_NUMBER}`,
       Icon: Phone,
     },
     {
@@ -42,7 +42,7 @@ export function Contact() {
     {
       label: t.contact.channels.linkedin,
       value: profile.linkedin.handle,
-      href: profile.linkedin.url, 
+      href: profile.linkedin.url,
       Icon: Linkedin,
     },
     {

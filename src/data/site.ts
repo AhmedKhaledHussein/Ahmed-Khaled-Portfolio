@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Ahmed Khaled Hussain",
+  name: "Ahmed Khaled Hussein",
   role: "Software Engineer | Full Stack Developer",
   university: "Arab Open University",
   major: "Computer Science",
@@ -10,8 +10,8 @@ export const profile = {
   whatsapp: "+20 104 326 3308",
   github: { handle: "okA7meed", url: "https://github.com/AhmedKhaledHussein" },
   linkedin: {
-    handle: "in/ahmed-khaled-h",
-    url: "https://www.linkedin.com/in/ahmed-khaled-h-197649349",
+    handle: "in/ahmedkhaledhussein",
+    url: "https://www.linkedin.com/in/ahmedkhaledhussein/",
   },
   instagram: { handle: "@ahmed.khaaledh", url: "https://www.instagram.com/ahmed.khaaledh" },
   facebook: { handle: "ahmed.khaled", url: "https://www.facebook.com/share/1FtG2M2pSg" },

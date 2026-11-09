@@ -30,7 +30,7 @@ export function Hero() {
                 draggable={false}
                 className="hero__portrait"
                 src={profilePortraitSrc}
-                alt={isArabic ? "أحمد خالد" : profilePortraitAlt}
+                alt={isArabic ? "أحمد خالد حسين" : profilePortraitAlt}
                 width={1024}
                 height={1024}
                 fetchPriority="high"
@@ -112,7 +112,7 @@ export function Hero() {
             <a
               className="hero__cv"
               href="/Ahmed_Khaled_Hussain_CV.pdf"
-              download="Ahmed-Khaled-Hussain-CV.pdf"
+              download="Ahmed-Khaled-Hussein-CV.pdf"
               data-entrance
               data-entrance-owner="opening"
               data-entrance-delay={OPENING.cv}

@@ -3,4 +3,4 @@
  * The previous portrait and cutout are preserved.
  */
 export const profilePortraitSrc = "/images/ahmed-khaled-cutout-v2.png";
-export const profilePortraitAlt = "Ahmed Khaled Hussain";
+export const profilePortraitAlt = "Ahmed Khaled Hussein";

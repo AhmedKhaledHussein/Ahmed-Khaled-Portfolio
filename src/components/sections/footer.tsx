@@ -32,7 +32,7 @@ export function Footer() {
       </div>
       <div className="site-footer__bottom">
         <span>
-          © {new Date().getFullYear()} Ahmed Khaled Hussain · {t.footer.copyright}
+          © {new Date().getFullYear()} Ahmed Khaled Hussein · {t.footer.copyright}
         </span>
         <span>{t.footer.openToWork}</span>
       </div>

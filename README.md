@@ -1,4 +1,4 @@
-# Ahmed Khaled Hussain — Personal Portfolio
+# Ahmed Khaled Hussein — Personal Portfolio
 
 **AI Engineer | Full Stack Developer | Creative Technologist**
 
@@ -6,7 +6,7 @@
 
 هذا الموقع ليس مجرد معرض للأعمال، بل مساحة رقمية أشارك من خلالها مشاريعي، مهاراتي التقنية، خبراتي، شهاداتي، ورحلتي المستمرة في عالم التكنولوجيا.
 
-🌐 **[استكشف الموقع](https://ahmed-khaled-portfolio-ten.vercel.app/)**
+🌐 **[استكشف الموقع](https://ahmedkhaledhussein.vercel.app/)**
 
 ---
 
@@ -135,13 +135,13 @@ npm run lint
 
 أرحب بفرص التعاون في مشاريع الذكاء الاصطناعي، وتطوير تطبيقات الويب، والتصميم الرقمي، وبناء المنتجات التقنية.
 
-- **Portfolio:** [Ahmed Khaled Hussain](https://ahmed-khaled-portfolio-ten.vercel.app/)
+- **Portfolio:** [Ahmed Khaled Hussein](https://ahmedkhaledhussein.vercel.app/)
 - **GitHub:** [@okA7meed](https://github.com/okA7meed)
-- **LinkedIn:** متاح من خلال الموقع الشخصي.
+- **LinkedIn:** [Ahmed Khaled Hussein](https://www.linkedin.com/in/ahmedkhaledhussein/).
 
 ---
 
-**Ahmed Khaled Hussain — © 2026**
+**Ahmed Khaled Hussein — © 2026**
 
 *Building intelligent systems and meaningful digital experiences.*
 

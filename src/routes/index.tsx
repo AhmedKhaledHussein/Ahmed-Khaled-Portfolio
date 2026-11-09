@@ -10,53 +10,35 @@ import { Awards } from "@/components/sections/awards";
 import { Work } from "@/components/sections/work";
 import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/sections/footer";
-import { profile } from "@/data/site";
+import { SEO, getIdentitySchema, seoUrl } from "@/config/seo";
 import { LanguageProvider, useLanguage } from "@/i18n/language";
 import { useEntrance } from "@/lib/entrance";
 import { useImageProtection } from "@/hooks/use-image-protection";
 
-const title = " Ahmed Khaled - Software Engineer ";
-const description =
-  "AI Engineer and Full Stack Developer in Cairo, Egypt. Computer Science at Arab Open University — AI products, full stack apps, UI/UX and digital marketing.";
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
+      { title: SEO.title },
+      { name: "description", content: SEO.description },
+      { name: "author", content: "Ahmed Khaled Hussein" },
+      { name: "robots", content: "index, follow, max-image-preview:large" },
+      { property: "og:title", content: SEO.title },
+      { property: "og:description", content: SEO.description },
       { property: "og:type", content: "profile" },
+      { property: "og:url", content: seoUrl() },
+      { property: "og:site_name", content: "Ahmed Khaled Hussein" },
+      { property: "og:locale", content: "ar_EG" },
+      { property: "og:image", content: seoUrl(SEO.imagePath) },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: "Ahmed Khaled Hussein — official portrait" },
       { name: "twitter:card", content: "summary_large_image" },
-      {
-  property: "og:image",
-  content: "https://ahmed-khaled-portfolio-ten.vercel.app/images/og-preview.png",
-},
-{
-  name: "twitter:image",
-  content: "https://ahmed-khaled-portfolio-ten.vercel.app/images/og-preview.png",
-},
+      { name: "twitter:title", content: SEO.title },
+      { name: "twitter:description", content: SEO.description },
+      { name: "twitter:image", content: seoUrl(SEO.imagePath) },
     ],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          name: profile.name,
-          jobTitle: profile.role,
-          email: profile.email,
-          address: { "@type": "PostalAddress", addressLocality: "Cairo", addressCountry: "EG" },
-          description,
-          sameAs: [
-            profile.github.url,
-            profile.linkedin.url, 
-            profile.instagram.url,
-            profile.facebook.url,
-          ],
-        }),
-      },
-    ],
+    links: [{ rel: "canonical", href: seoUrl() }],
+    scripts: [{ type: "application/ld+json", children: JSON.stringify(getIdentitySchema()) }],
   }),
   component: Index,
 });
