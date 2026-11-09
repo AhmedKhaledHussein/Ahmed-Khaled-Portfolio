@@ -1,0 +1,8 @@
+# Public portfolio: permit discovery by standard search engines and ChatGPT Search.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ahmedkhaledhussein.vercel.app/sitemap.xml

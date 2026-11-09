@@ -56,7 +56,7 @@ const dictionaries = {
       lead: "ليس كل مهندس يصمم، وليس كل مصمم يبني. أعمل على الجانبين.",
       short: "باختصار",
       bodyOne:
-        "أدرس علوم الحاسب في الجامعة العربية المفتوحة، وأقيم في مدينة الشروق بالقاهرة. أعمل عبر طبقات المنتج: من تدريب نماذج الذكاء الاصطناعي ونشرها، إلى بناء واجهات وتجارب يستخدمها الناس.",
+        "أنا أحمد خالد حسين، مهندس برمجيات ومطور Full Stack من القاهرة، مصر. أدرس علوم الحاسب في الجامعة العربية المفتوحة، وأعمل عبر طبقات المنتج: من تدريب نماذج الذكاء الاصطناعي ونشرها، إلى بناء واجهات وتجارب يستخدمها الناس.",
       bodyTwo:
         "وأهتم أيضًا بالتصميم والنمو؛ من تجربة المستخدم وأنظمة الهوية إلى التسويق الرقمي، حتى لا يكتفي المنتج بالعمل، بل يصل إلى جمهوره.",
       university: "الجامعة العربية المفتوحة",
@@ -306,7 +306,7 @@ const dictionaries = {
       lead: "Not every engineer designs, and not every designer builds. I work across both.",
       short: "The short version",
       bodyOne:
-        "I study Computer Science at Arab Open University and live in Shorouk City, Cairo. I work across the product stack — from training and deploying AI models to building interfaces and experiences people use.",
+        "I am Ahmed Khaled Hussein, a software engineer and Full Stack developer based in Cairo, Egypt. I study Computer Science at Arab Open University and work across the product stack — from training and deploying AI models to building interfaces and experiences people use.",
       bodyTwo:
         "I also care about design and growth: user experience, brand systems, and digital marketing, so a product does more than work — it reaches its audience.",
       university: "Arab Open University",

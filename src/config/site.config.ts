@@ -16,7 +16,7 @@ import { DEFAULT_THEME, type ThemeName } from "./theme";
 
 export const siteConfig = {
   // ── Identity ─────────────────────────────────────────────
-  name: "Ahmed Khaled Hussain",
+  name: "Ahmed Khaled Hussein",
   logoText: "Ahmed.Khaled",
   logoConst: "Ahmed.",
   logoName: "Khaled",

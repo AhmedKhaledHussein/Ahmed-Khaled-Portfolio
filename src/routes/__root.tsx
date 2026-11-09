@@ -10,7 +10,6 @@ import {
 import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
-import { siteConfig } from "@/config";
 import { ThemeProvider } from "@/hooks/use-theme";
 import { initThemeScript } from "@/lib/theme";
 
@@ -25,7 +24,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: { error: unknown; reset: () => void }) {
   const router = useRouter();
   useEffect(() => {
     reportLovableError(error, { boundary: "tanstack_root_error_component" });
@@ -56,19 +55,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: `${siteConfig.name} — ${siteConfig.role}` },
-      {
-        name: "description",
-        content: "Ahmed Khaled Hussain — AI Engineer and Full Stack Developer in Cairo, Egypt.",
-      },
-      { name: "author", content: siteConfig.name },
-      { property: "og:title", content: `${siteConfig.name} — ${siteConfig.role}` },
-      {
-        property: "og:description",
-        content: "AI Engineer and Full Stack Developer in Cairo, Egypt.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
