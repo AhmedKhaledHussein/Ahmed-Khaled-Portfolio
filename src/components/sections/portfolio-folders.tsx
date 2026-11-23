@@ -29,11 +29,13 @@ const arabicDescriptions: Record<string, string> = {
   "AOU Computer Science Study Planner":
     "لوحة لمتابعة التقدم الأكاديمي وخارطة دراسة ذكية لطلاب الجامعة.",
   "Scented Realms": "متجر إلكتروني فاخر للعطور بتجربة تفاعلية وحركات عصرية.",
+  "FOX Cinema 3D": "تجربة سينما تفاعلية لاستكشاف الأفلام ودور العرض ومواعيد الحفلات واختيار المقاعد وحجزها.",
 };
 const projectKinds = [
   { ar: "منصة مطعم مميز", en: "RESTAURANT PLATFORM" },
   { ar: "مخطط دراسي جامعي", en: "STUDY PLANNER" },
   { ar: "متجر إلكتروني للعطور", en: "LUXURY E-COMMERCE" },
+  { ar: "منصة سينما وحجز تذاكر", en: "CINEMA & BOOKING" },
 ];
 const iconForeground = (hex: string) => {
   const red = Number.parseInt(hex.slice(0, 2), 16);
@@ -77,15 +79,8 @@ export function PortfolioFolders({ language }: { language: Language }) {
   }, []);
 
   // On touch screens: the first tap exposes the papers, the next opens the actual project.
-  const projectClick = (event: MouseEvent<HTMLAnchorElement>, index: number) => {
-    if (
-      event.detail !== 0 &&
-      (pointerType.current === "touch" || window.matchMedia("(hover: none)").matches) &&
-      openedFolder !== index
-    ) {
-      event.preventDefault();
-      setOpenedFolder(index);
-    }
+  const projectClick = (_event: MouseEvent<HTMLAnchorElement>, index: number) => {
+    setOpenedFolder(index);
   };
 
   return (
