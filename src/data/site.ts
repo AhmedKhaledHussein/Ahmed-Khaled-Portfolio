@@ -190,6 +190,15 @@ export const experience = [
 
 export const projects = [
   {
+    title: "FOX Cinema 3D",
+    description:
+      "Immersive cinema experience featuring movie discovery, cinema browsing, showtime selection and interactive seat booking.",
+    image: "/images/projects/project-fox-cinema.jpg",
+    websiteUrl: "https://foxcinema-3d.vercel.app/#/home",
+    technologies: ["React", "TypeScript", "3D UI", "Responsive Design"],
+  },
+
+  {
     title: "BRGHR Restaurant Website",
     description:
       "Modern restaurant ordering platform with real-time order tracking and admin dashboard.",
